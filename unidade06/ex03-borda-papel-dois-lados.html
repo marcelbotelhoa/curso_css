@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS3 Avancado</title>
+        <style>
+            body {
+                background: #F0F0F0;    
+            }
+            /* Versão curso */
+            #janela 
+            {
+                position: relative;
+                margin:100px auto 50px;
+                width:700px;
+                height:250px;
+                border-radius: 5px;
+                background-color:#FFF;
+            }
+
+            #janela:before, #janela:after {
+                position: absolute;
+                left:5px;
+                top:50%;
+                bottom:15px;
+                width: 50%;
+                background: #999;
+                box-shadow: 0 15px 10px #999;
+                transform: rotate(-3deg);
+                content: "";
+                z-index: -1;
+            }
+
+            #janela:after {
+                right:5px;
+                left: auto;
+                transform: rotate(3deg)
+            }
+
+            /* Versão minha */
+            /*#janela:before {
+                position: absolute;
+                left:5px;
+                top:50%;
+                bottom:15px;
+                width: 50%;
+                background: #999;
+                box-shadow: 0 15px 10px #999;
+                transform: rotate(-3deg);
+                content: "";
+                z-index: -1;
+            }
+
+            *#janela:after {
+                position: absolute;
+                right:5px;
+                top:50%;
+                bottom:15px;
+                width: 50%;
+                background: #999;
+                box-shadow: 0 15px 10px #999;
+                transform: rotate(3deg);
+                content: "";
+                z-index: -1;
+            }*/
+                        
+        </style>
+    </head>
+
+    <body>
+        <div id="janela"></div>
+    </body>
+</html>

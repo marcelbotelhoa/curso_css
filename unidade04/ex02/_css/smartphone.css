@@ -1,0 +1,21 @@
+/* iphone 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    body {
+        background-color: #FF0000;
+    }
+
+    h1 {
+        color: white;
+    }
+}
+
+/* iphone 8 PLUS */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    h1 {
+        color: yellow;
+    }
+}
